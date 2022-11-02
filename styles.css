@@ -1,5 +1,133 @@
-h1{
-    background-color: aqua;
-    color: red;
-}
-
+body{
+    margin: 3rem;
+    font-family: Verdana, Geneva, sans-serif;
+    }
+    
+    h1{
+    text-align: center;
+    font-size: 70px;
+    animation: fadeIn 2s;
+    opacity: 1;
+    }
+    
+    h1, h2{
+      -webkit-text-stroke: 1.5px black;
+    }
+    
+    #social{
+        text-align: center;
+        font-size: 40px;
+        animation: fadeIn 4s;
+          opacity: 1;
+    }
+    
+    h1, #social{
+        margin: -10px;
+        position: relative; top: -50rem;
+        color: aliceblue;
+    
+        
+    }
+    @keyframes fadeIn {
+      from {
+          opacity: 0;
+      }
+      to {
+         opacity: 1;
+      }
+    }
+    
+    .logo{
+      position: relative; top: -45rem;
+      border-radius: 5%;
+      width: 175px;
+      margin-bottom: .5rem;
+    }
+    .sign{
+      text-align: center;
+    }
+    
+    .background{
+        width: 80%;
+        height: 60%;
+        border: 2px solid;
+        border-radius: 2%;
+        margin-left: 175px;
+    }
+    .product{
+        position: relative;
+        border-radius: 5%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border: 3px solid ; 
+    }
+    
+    .column {
+      float: left;
+      width: 33.33%;
+      padding: 5px;
+    }
+    
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+    
+      .row {
+        display: flex;
+      }
+      
+      .column {
+        flex: 33.33%;
+        padding: 5px;
+      }
+    
+      @media screen and (max-width: 500px) {
+        .column {
+          width: 100%;
+        }
+      }
+    
+    button{
+      width: 23.5%;
+      padding: 0.60rem;
+      height: 2.75rem;
+      background: linear-gradient(#e66465, #9198e5); 
+      cursor: pointer;
+      color: white;
+      border: 2.5px solid gray;
+      border-radius: 0.25rem;
+      font-size: 18px;
+    }
+    
+    input{
+    margin: 2 auto 1.5rem auto;
+    display: block;
+    width: 25.5%;
+    height: 2.75rem;
+    padding: 0rem 0.75rem;
+    border: 2px solid grey;
+    border-radius: 0.25rem;
+    position:relative; right: -36.5%; top: -100px;
+    text-align: center;
+    font-size: 15.75px;
+    }
+    
+    p, h3, i, h4{
+      text-align: center;
+    }
+    
+    i{
+     position: relative;
+     color: black;  
+     font-size: 1.75em;
+     top: 2.8rem;
+     left: 13.5rem;
+    }
+    
+    .fa-truck-fast{
+      left: 13rem;
+      top: 3rem;
+    }
