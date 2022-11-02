@@ -9,6 +9,10 @@ app.get("/",(req, res) => {
 
 const port = process.env.PORT || 5000
 
+app.get('/css', (req, res) => {
+    res.sendFile(path.join(__dirname, '../styles.css'))
+})
+
 app.listen(port, () => {
     console.log(`Server listening on port ${port}`)
 })
