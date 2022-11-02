@@ -4,4 +4,4 @@ const buttonAlert = () => {
     alert('It works')
 }
 
-button.addEventListener(click,buttonAlert)
+button.addEventListener('click', buttonAlert)
